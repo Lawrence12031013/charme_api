@@ -54,8 +54,8 @@ app.get('/', (req, res) => {
     }
 })
 
-app.listen('5050', () => {
+app.listen('3000', () => {
     connect()
-    console.log(`Server running on http://localhost:5050`)
+    console.log(`Server running on 3000`)
 })
 
