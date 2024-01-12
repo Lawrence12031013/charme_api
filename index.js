@@ -26,6 +26,8 @@ Mongoose.connection.on('disconnecting', () => {
     console.log('MongoDB disconnecting...')
 })
 
+connect()
+
 const app = express()
 
 app.use(cookieParser())
@@ -54,11 +56,10 @@ app.get('/', (req, res) => {
     }
 })
 
+
 const port = process.env.PORT || 8080
 
 app.listen(port, () => {
-    console.log(port)
-    connect()
     console.log(`Server running on ${port}`)
 })
 
