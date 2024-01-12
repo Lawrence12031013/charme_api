@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "RESTful API",
-    "devstart": "nodemon index.js"
+    "devstart": "node index.js"
   },
   "author": "Lawrence",
   "license": "ISC",
